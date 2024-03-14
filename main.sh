@@ -82,6 +82,9 @@ function persistence_techniques () {
 	12)
 		bash Log-rotations.sh
 		;;
+        13)
+		return
+  		;;
   esac
   cd ..
 done  		
