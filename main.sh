@@ -136,6 +136,7 @@ while true; do
 
   case $choice in
     1)
+      while true; do
       persistence_techniques
       ;;
     2)
