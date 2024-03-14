@@ -52,7 +52,7 @@ git clone https://github.com/VirusTotal/vt-cli.git
 cd vt-cli
 go build
 make install
-
+sudo apt install golang-go
 export GOBIN=`go env GOPATH`/bin
 export PATH=$PATH:$GOBIN
 
