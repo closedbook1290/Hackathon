@@ -44,6 +44,8 @@ sudo apt-get install rkhunter
 
 # Clone vt-cli repository
 cd ../
+mkdir Scanfile
+cd Scanfile
 git clone https://github.com/VirusTotal/vt-cli.git
 
 # Build and install vt-cli
@@ -58,5 +60,5 @@ echo "vt-cli has been successfully installed."
 
 echo "For Configuring API KEY of virustotal enter the command in linux cli "
 echo "vt init"
-
+cd ../..
 # No need to export PATH here, as /usr/local/bin is already in PATH
