@@ -103,9 +103,9 @@ function memory_forensics () {
 
   # Run Volatility commands on the memory image
   # volatility -f $memory_image $volatility_commands
-  cd volatility
+  cd /MemoryForensicsTools/volatility
   python2 vol.py -f $memory_image $volatility_commands
-  cd ..
+  cd ../..
 }
 
 # Function to detect rootkits (replace 'rootkit_hunter' with your actual tool)
