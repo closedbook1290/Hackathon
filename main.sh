@@ -66,6 +66,7 @@ function persistence_techniques () {
 	12)
 		bash Log-rotations.sh
 		;;
+  esac
   		
 }
 
