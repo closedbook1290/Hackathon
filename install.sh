@@ -12,8 +12,8 @@ if ! command -v git &>/dev/null; then
 fi
 
 # Create a directory for Forensics tools (more organized)
-mkdir ForensicsTools
-cd ForensicsTools
+mkdir MemoryForensicsTools
+cd MemoryForensicsTools
 
 # Clone Volatility repository
 git clone https://github.com/volatilityfoundation/volatility.git
