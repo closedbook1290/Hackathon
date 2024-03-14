@@ -112,13 +112,17 @@ function memory_forensics () {
 # Function to detect rootkits (replace 'rootkit_hunter' with your actual tool)
 function rootkit_detection () {
   # Check if your rootkit detection tool is installed
-  if ! command -v rootkit_hunter &> /dev/null ; then
+  if ! command -v rkhunter &> /dev/null ; then
     echo "Error: Rootkit detection tool (rootkit_hunter) is not installed. Replace 'rootkit_hunter' with your tool."
     return 1
   fi
-
-  # Run your rootkit detection tool
-  sudo rkhunter --check
+  cho"Enter Text File name for output"
+  read file
+  touch $file
+  sudo rkhunter --check >> $file
+  your_program_here
+  echo -ne '\n'
+  cat $file
 }
 
 # Function to scan a file for malware using VirusTotal
