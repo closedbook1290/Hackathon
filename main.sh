@@ -40,6 +40,7 @@ function persistence_techniques () {
 	echo "10) Malicious Databases"
 	echo "11) Malicious sysconfig files"
 	echo "12) Logging and Log Rotation"
+ 	echo "13) Back to Main Menu"
 	echo "Select a option"
 	cd 'Persistence Scripts'
  	read -r choice
