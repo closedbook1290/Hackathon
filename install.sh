@@ -51,6 +51,9 @@ cd vt-cli
 go build
 make install
 
+export GOBIN=`go env GOPATH`/bin
+export PATH=$PATH:$GOBIN
+
 echo "vt-cli has been successfully installed."
 
 # No need to export PATH here, as /usr/local/bin is already in PATH
