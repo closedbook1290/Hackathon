@@ -154,7 +154,10 @@ function scan_file () {
   echo "Scan Results:"
   echo "$scan_result"
 }
-
+function steghide () {
+	cd Steganography
+ 	bash stegdecode.sh
+}
 while true; do
   display_menu
   read -r choice
@@ -171,7 +174,7 @@ while true; do
       rootkit_detection
       ;;
     4)
-      steganography
+      steghide
       ;;
     5)
       scan_file
