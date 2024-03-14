@@ -1,5 +1,18 @@
 #!/bin/bash
 
+printf "\e[0m\n"
+printf "\e[0m\e[92m  _        _      ____        ______   _     __\e[0m\e[93m  _________   ________      ____        ______   ________ \e[0m\n"
+printf "\e[0m\e[92m | |	  | |    / __ \      / _____| | |   / /\e[0m\e[93m |_________| |  ____  |    / __ \      / _____| | _______|\e[0m\n"
+printf "\e[0m\e[92m | |      | |   / /  \ \    / /       | |  / / \e[0m\e[93m     | |     | |    | |   / /  \ \    / /       | |       \e[0m\n"
+printf "\e[0m\e[92m | |______| |  / /____\ \  | |        | | / /  \e[0m\e[93m     | |     | |____| |  / /____\ \  | |        | |______ \e[0m\n"
+printf "\e[0m\e[92m | |______| | | |______| | | |        | |/ /   \e[0m\e[93m     | |     | ___  __| | |______| | | |        | _______|\e[0m\n"
+printf "\e[0m\e[92m | |      | | | |      | | | |        | | / \  \e[0m\e[93m     | |     | |  \ \   | |      | | | |        | |       \e[0m\n"
+printf "\e[0m\e[92m | |      | | | |      | |  \ \_____  | |/ \ \ \e[0m\e[93m     | |     | |   \ \  | |      | |  \ \_____  | |______ \e[0m\n"
+printf "\e[0m\e[92m |_|      |_| |_|      |_|   \______| |_|   \_\ \e[0m\e[93m    |_|     |_|    \_\ |_|      |_|   \______| |________|\e[0m\n"
+printf "\e[0m\n"
+printf " \e[0m\e[1;41m Malware Forensics Tool  [BY : LegaLogic Pioneers ]\e[0m\n"
+printf "\e[0m\n"
+
 echo "Welcome to Forensics and Malware Analysis Script!"
 
 # Function to display the main menu
