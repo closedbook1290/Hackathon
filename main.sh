@@ -24,6 +24,7 @@ echo "Welcome to Forensics and Malware Analysis Script!"
 	echo "3) Rootkit Detection"
 	echo "4) Steganography"
 	echo "5) File Analysis"
+ 	echo "6) Exit"
 	echo "Select an option"
 }
 function persistence_techniques () {
