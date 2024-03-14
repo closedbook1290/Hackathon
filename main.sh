@@ -81,7 +81,7 @@ function persistence_techniques () {
 		bash Log-rotations.sh
 		;;
   esac
-  		
+done  		
 }
 
 # Function to perform memory forensics using Volatility
