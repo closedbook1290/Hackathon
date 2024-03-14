@@ -28,6 +28,7 @@ function persistence_techniques () {
 	echo "12) Logging and Log Rotation"
 	echo "Select a option"
 	cd 'Persistence Scripts'
+ 	while true; do
  	read -r choice
   	case $choice in 
 	1)
@@ -136,7 +137,7 @@ while true; do
 
   case $choice in
     1)
-      while true; do
+      
       persistence_techniques
       ;;
     2)
