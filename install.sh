@@ -56,4 +56,7 @@ export PATH=$PATH:$GOBIN
 
 echo "vt-cli has been successfully installed."
 
+echo "For Configuring API KEY of virustotal enter the command in linux cli "
+echo "vt init"
+
 # No need to export PATH here, as /usr/local/bin is already in PATH
