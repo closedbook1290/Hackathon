@@ -26,6 +26,7 @@ function display_menu() {
 	echo "Select an option"
 }
 function persistence_techniques () {
+	while true; do
 	echo "Linux Persistence Techniques"
 	echo "1)  Environment Variables"
 	echo "2)  Locating Linux Startup scripts"
@@ -41,7 +42,6 @@ function persistence_techniques () {
 	echo "12) Logging and Log Rotation"
 	echo "Select a option"
 	cd 'Persistence Scripts'
- 	while true; do
  	read -r choice
   	case $choice in 
 	1)
@@ -81,6 +81,7 @@ function persistence_techniques () {
 		bash Log-rotations.sh
 		;;
   esac
+  cd ..
 done  		
 }
 
@@ -175,37 +176,3 @@ while true; do
       ;;
   esac
 done
-
-
-
-
-  
-display_menu
-	read -r choice
-	
-	case $choice in
-		1)
-			persistence_technique
-
-	esac
-done
-
-
-		
-
-#function memory_forensics () { 
-
-#}
-
-#fuction rootkit () {
-
-#}
-
-#function steganography () {
-
-#}
-
-#function file_analysis (){
-
-#}
-
