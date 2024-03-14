@@ -156,7 +156,7 @@ function scan_file () {
 }
 function steghide () {
 	cd Steganography
- 	bash stegdecode.sh
+ 	bash Stegdecode.sh
 }
 while true; do
   display_menu
