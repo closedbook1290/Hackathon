@@ -40,6 +40,7 @@ if [[ "$answer" = "y" ]]; then
 else
   echo "You chose not to install Python 2."
 fi
+sudo apt-get install rkhunter
 
 # Clone vt-cli repository
 cd ../
