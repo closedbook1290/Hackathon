@@ -120,9 +120,6 @@ function rootkit_detection () {
     echo "Error: Rootkit detection tool (rootkit_hunter) is not installed. Replace 'rootkit_hunter' with your tool."
     return 1
   fi
-  cho"Enter Text File name for output"
-  read file
-  touch $file
   sudo rkhunter --check
 }
 
