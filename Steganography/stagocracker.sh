@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Directory containing files to analyze
-echo "Enter The Directory "
+echo "Enter The Directory Path : "
 read directory_name
-DIR_TO_ANALYZE=$directory_name
+DIR_TO_ANALYZE="$directory_name"
 
 # Iterate over files in the directory
 for FILE in "$DIR_TO_ANALYZE"/*; do
