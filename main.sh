@@ -132,6 +132,7 @@ function scan_file () {
 }
 function steghide () {
 	cd Steganography
+ 	chmod +x *
  	bash stagocracker.sh
 }
 while true; do
