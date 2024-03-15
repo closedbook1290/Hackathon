@@ -1,8 +1,8 @@
 #!/bin/bash
-
+clear
 # Function to display the main menu
 function display_menu() {
-clear
+
 printf "\e[0m\n"
 printf "\e[0m\e[92m  _        _      ____        ______   _     __\e[0m\e[93m  _________   ________      ____        ______   ________ \e[0m\n"
 printf "\e[0m\e[92m | |	  | |    / __ \      / _____| | |   / /\e[0m\e[93m |_________| |  ____  |    / __ \      / _____| | _______|\e[0m\n"
