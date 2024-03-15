@@ -108,7 +108,7 @@ function memory_forensics () {
 
   # Run Volatility commands on the memory image
   # volatility -f $memory_image $volatility_commands
-  cd /MemoryForensicsTools/volatility
+  cd MemoryForensicsTools/volatility
   python2 vol.py -f $memory_image $volatility_commands
   cd ../..
 }
