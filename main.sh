@@ -123,10 +123,7 @@ function rootkit_detection () {
   cho"Enter Text File name for output"
   read file
   touch $file
-  sudo rkhunter --check >> $file
-  your_program_here
-  echo -ne '\n'
-  cat $file
+  sudo rkhunter --check
 }
 
 # Function to scan a file for malware using VirusTotal
