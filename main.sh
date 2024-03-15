@@ -127,30 +127,12 @@ function rootkit_detection () {
 function scan_file () {
   echo "Enter the path to the file: "
   read file_path
-
-  # Check if curl is installed (needed for VirusTotal API access)
-  if ! command -v curl &> /dev/null ; then
-    echo "Error: curl is not installed."
-    return 1
-  fi
-
-  # Get the file hash
-  file_hash=$(sha256sum $file_path | awk '{print $1}')
-
-  # VirusTotal API URL (replace with your own API key)
-  api_url="https://www.virustotal.com/vtapi/v3/files/$file_hash"
-  api_key="YOUR_VIRUSTOTAL_API_KEY"
-
-  # Send the request to VirusTotal API
-  scan_result=$(curl -X GET -H "Authorization: Bearer $api_key" $api_url)
-
-  # Display scan results (parse the JSON output for better presentation)
-  echo "Scan Results:"
-  echo "$scan_result"
+  sudo apt install clamscan
+  sudo clamscan $filepath
 }
 function steghide () {
 	cd Steganography
- 	bash Stegdecode.sh
+ 	bash stagocracker.sh
 }
 while true; do
   display_menu
