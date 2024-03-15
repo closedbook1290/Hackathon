@@ -41,24 +41,3 @@ else
   echo "You chose not to install Python 2."
 fi
 sudo apt-get install rkhunter
-
-# Clone vt-cli repository
-cd ../
-mkdir Scanfile
-cd Scanfile
-git clone https://github.com/VirusTotal/vt-cli.git
-
-# Build and install vt-cli
-cd vt-cli
-go build
-make install
-sudo apt install golang-go
-export GOBIN=`go env GOPATH`/bin
-export PATH=$PATH:$GOBIN
-
-echo "vt-cli has been successfully installed."
-
-echo "For Configuring API KEY of virustotal enter the command in linux cli "
-echo "vt init"
-cd ../..
-# No need to export PATH here, as /usr/local/bin is already in PATH
