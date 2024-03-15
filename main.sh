@@ -23,8 +23,7 @@ echo "Welcome to Forensics and Malware Analysis Script!"
 	echo "2) Memory forensics"
 	echo "3) Rootkit Detection"
 	echo "4) Steganography"
-	echo "5) File Analysis"
- 	echo "6) Exit"
+ 	echo "5) Exit"
 	echo "Select an option"
 }
 function persistence_techniques () {
@@ -122,14 +121,6 @@ function rootkit_detection () {
   fi
   sudo rkhunter --check
 }
-
-# Function to scan a file for malware using VirusTotal
-function scan_file () {
-  echo "Enter the path to the file: "
-  read file_path
-  sudo apt install clamscan
-  sudo clamscan $filepath
-}
 function steghide () {
 	cd Steganography
  	chmod +x *
@@ -154,10 +145,6 @@ while true; do
       steghide
       ;;
     5)
-      scan_file
-      ;;
-      
-    6)
       echo "Exiting..."
       exit 0
       ;;
